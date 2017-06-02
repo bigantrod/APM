@@ -41,7 +41,7 @@ export class ProductListComponent{
         'starRating': 3.7,
         'imageUrl': 'http://openclipart.org/image/300px/svg_to_png/27070/egore911_saw.png'
       }
-    ];
+    ]
 
     toggleImage(): void {
         this.showImage = !this.showImage;
