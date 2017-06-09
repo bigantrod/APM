@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { IProduct } from './product';
+import { ProductService } from "./product.service";
 
 @Component({
     selector: 'pm-products',
@@ -47,6 +48,10 @@ export class ProductListComponent implements OnInit {
       }
     ];
 
+
+    constructor(private _productService: ProductService){
+    }
+
     toggleImage(): void {
         this.showImage = !this.showImage;
     }
@@ -56,7 +61,6 @@ export class ProductListComponent implements OnInit {
     }
 
     onRatingClicked(message: string):void {
-
       this.pageTitle = 'Product List: ' + message;
     }
 
