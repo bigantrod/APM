@@ -20,8 +20,7 @@ export class ProductListComponent implements OnInit {
 
 
     constructor(private _productService: ProductService){
-
-        }
+       }
 
     toggleImage(): void {
         this.showImage = !this.showImage;
